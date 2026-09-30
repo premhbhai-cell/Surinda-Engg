@@ -1,0 +1,2536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | Grow India Pest Control Service</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            background: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        .header-area {
+            width: 100%;
+            background: #fff;
+        }
+
+
+        /* =====================================================
+           DESKTOP HEADER
+        ===================================================== */
+
+        .desktop-header {
+            display: block;
+            width: 100%;
+        }
+
+        .header-top {
+            width: 100%;
+            height: 90px;
+            background: #fff;
+        }
+
+        .header-container {
+            width: 1160px;
+            max-width: calc(100% - 40px);
+            height: 100%;
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        /* LOGO */
+
+        .brand-logo img {
+            width: 220px;
+        }
+
+
+        /* PHONE BUTTON */
+
+        .phone-button {
+            min-width: 195px;
+            height: 56px;
+
+            padding: 0 20px;
+
+            border: 1px solid #555;
+            border-radius: 7px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 8px;
+
+            color: #333;
+
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: 15px;
+
+            transition: 0.3s;
+        }
+
+        .phone-button:hover {
+            background: #f7941d;
+            border-color: #f7941d;
+            color: #fff;
+        }
+
+        .phone-icon {
+            width: 27px;
+            height: 27px;
+
+            border: 1px solid #777;
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 12px;
+        }
+
+
+        /* =====================================================
+           DESKTOP NAVIGATION
+        ===================================================== */
+
+        .desktop-navigation {
+            width: 100%;
+            height: 58px;
+            background: #222;
+        }
+
+        .navigation-container {
+            width: 1160px;
+            max-width: 100%;
+            height: 100%;
+
+            margin: auto;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .desktop-menu {
+            height: 100%;
+
+            display: flex;
+            align-items: stretch;
+        }
+
+        .desktop-menu li {
+            height: 100%;
+        }
+
+        .desktop-menu a {
+            height: 100%;
+
+            padding: 0 28px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: #fff;
+
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: 16px;
+            font-weight: bold;
+
+            text-transform: uppercase;
+
+            white-space: nowrap;
+
+            transition: 0.3s;
+        }
+
+        .desktop-menu li:hover a {
+            background: #f7941d;
+        }
+
+        /* ABOUT ACTIVE */
+
+        .desktop-menu li.active a {
+            background: #f7941d;
+        }
+
+
+        /* =====================================================
+           MOBILE HEADER
+        ===================================================== */
+
+        .mobile-header {
+            display: none;
+
+            width: 100%;
+            height: 70px;
+
+            background: #fff;
+
+            position: relative;
+
+            z-index: 1000;
+
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
+        }
+
+        .mobile-header-inner {
+            width: 100%;
+            height: 70px;
+
+            padding: 0 18px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .mobile-logo img {
+            width: 175px;
+        }
+
+
+        /* =====================================================
+           HAMBURGER
+        ===================================================== */
+
+        .hamburger {
+            width: 52px;
+            height: 52px;
+
+            border: none;
+
+            background: transparent;
+
+            cursor: pointer;
+
+            padding: 10px;
+
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            justify-content: center;
+
+            gap: 5px;
+        }
+
+        .hamburger span {
+            width: 27px;
+            height: 2px;
+
+            display: block;
+
+            background: #222;
+        }
+
+
+        /* =====================================================
+           MOBILE OVERLAY
+        ===================================================== */
+
+        .offcanvas-overlay {
+            position: fixed;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100vh;
+
+            background: rgba(0, 0, 0, 0.45);
+
+            opacity: 0;
+            visibility: hidden;
+
+            z-index: 1998;
+
+            transition: 0.3s;
+        }
+
+
+        /* =====================================================
+           OFFCANVAS
+        ===================================================== */
+
+        .offcanvas {
+            position: fixed;
+
+            top: 0;
+            left: 0;
+
+            width: 280px;
+            max-width: 82vw;
+
+            height: 100vh;
+
+            background: #fff;
+
+            z-index: 1999;
+
+            overflow-y: auto;
+
+            transform: translateX(-100%);
+
+            transition: transform 0.35s ease;
+
+            box-shadow: 3px 0 15px rgba(0, 0, 0, 0.18);
+        }
+
+        body.menu-open {
+            overflow: hidden;
+        }
+
+        body.menu-open .offcanvas {
+            transform: translateX(0);
+        }
+
+        body.menu-open .offcanvas-overlay {
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* CLOSE BUTTON */
+
+        .offcanvas-close {
+            position: absolute;
+
+            top: 0;
+            right: 0;
+
+            width: 48px;
+            height: 48px;
+
+            border: none;
+
+            background: #f7941d;
+
+            color: #fff;
+
+            font-size: 29px;
+
+            cursor: pointer;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        /* =====================================================
+           MOBILE MENU
+        ===================================================== */
+
+        .mobile-navigation {
+            padding-top: 75px;
+        }
+
+        .mobile-menu li a {
+            display: block;
+
+            padding: 14px 17px;
+
+            color: #333;
+
+            font-size: 16px;
+
+            transition: 0.25s;
+        }
+
+        .mobile-menu li a:hover {
+            background: #f5f5f5;
+            color: #f7941d;
+        }
+
+        .mobile-menu li.active a {
+            background: #f7941d;
+            color: #fff;
+        }
+
+
+        /* =====================================================
+           MOBILE CONTACT
+        ===================================================== */
+
+        .offcanvas-contact {
+            margin-top: 300px;
+
+            padding: 20px 17px 5px;
+
+            border-top: 1px solid #eee;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+
+            gap: 12px;
+
+            margin-bottom: 18px;
+
+            color: #555;
+
+            font-size: 14px;
+
+            line-height: 1.5;
+        }
+
+        .contact-icon {
+            width: 20px;
+            min-width: 20px;
+
+            color: #f7941d;
+        }
+
+        .contact-item a {
+            word-break: break-word;
+        }
+
+
+        /* =====================================================
+           SOCIAL
+        ===================================================== */
+
+        .social-icons {
+            padding: 8px 17px 25px;
+
+            display: flex;
+
+            gap: 20px;
+        }
+
+        .social-icons a {
+            color: #555;
+
+            font-size: 17px;
+        }
+
+        .social-icons a:hover {
+            color: #f7941d;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .about-hero {
+            min-height: 300px;
+
+            padding: 60px 20px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.58),
+                    rgba(0, 0, 0, 0.58)),
+                linear-gradient(135deg, #333, #111);
+        }
+
+        .about-hero h1 {
+            color: #fff;
+
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: 48px;
+
+            margin-bottom: 12px;
+        }
+
+        .about-hero h1 span {
+            color: #f7941d;
+        }
+
+        .about-hero p {
+            color: #fff;
+
+            font-size: 16px;
+        }
+
+
+        /* =====================================================
+           COMMON CONTAINER
+        ===================================================== */
+
+        .container {
+            width: 1160px;
+
+            max-width: calc(100% - 40px);
+
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: 36px;
+
+            color: #222;
+
+            margin-bottom: 12px;
+        }
+
+        .section-title h2 span {
+            color: #f7941d;
+        }
+
+        .section-title p {
+            max-width: 700px;
+
+            margin: auto;
+
+            color: #666;
+
+            line-height: 1.7;
+
+            font-size: 15px;
+        }
+
+
+        /* =====================================================
+           COMPANY SECTION
+        ===================================================== */
+
+        .company-section {
+            padding: 75px 20px;
+
+            background: #fff;
+        }
+
+        .company-grid {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 55px;
+
+            align-items: center;
+        }
+
+        .company-content h2 {
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: 36px;
+
+            color: #222;
+
+            margin-bottom: 20px;
+        }
+
+        .company-content h2 span {
+            color: #f7941d;
+        }
+
+        .company-content p {
+            color: #555;
+
+            line-height: 1.8;
+
+            font-size: 16px;
+
+            margin-bottom: 16px;
+        }
+
+
+        /* =====================================================
+           COMPANY INFORMATION
+        ===================================================== */
+
+        .company-info {
+            background: #f7f7f7;
+
+            border-left: 4px solid #f7941d;
+
+            padding: 28px;
+
+            border-radius: 4px;
+        }
+
+        .company-info h3 {
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: 24px;
+
+            color: #222;
+
+            margin-bottom: 20px;
+        }
+
+        .info-row {
+            display: flex;
+
+            gap: 10px;
+
+            margin-bottom: 14px;
+
+            line-height: 1.6;
+        }
+
+        .info-row strong {
+            min-width: 90px;
+
+            color: #222;
+        }
+
+        .info-row span,
+        .info-row a {
+            color: #555;
+        }
+
+        .info-row a:hover {
+            color: #f7941d;
+        }
+
+
+        /* =====================================================
+           MISSION
+        ===================================================== */
+
+        .mission-section {
+            padding: 75px 20px;
+
+            background: #f7f7f7;
+        }
+
+        .mission-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .mission-card {
+            background: #fff;
+
+            padding: 35px 25px;
+
+            text-align: center;
+
+            border-radius: 5px;
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.07);
+
+            transition: 0.3s;
+        }
+
+        .mission-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .mission-icon {
+            width: 65px;
+            height: 65px;
+
+            margin: 0 auto 20px;
+
+            border-radius: 50%;
+
+            background: #f7941d;
+
+            color: #fff;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            font-size: 28px;
+        }
+
+        .mission-card h3 {
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: 23px;
+
+            color: #222;
+
+            margin-bottom: 12px;
+        }
+
+        .mission-card p {
+            color: #666;
+
+            line-height: 1.7;
+
+            font-size: 15px;
+        }
+
+
+        /* =====================================================
+           SERVICES
+        ===================================================== */
+
+        .services-section {
+            padding: 75px 20px;
+
+            background: #fff;
+        }
+
+        .services-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .service-card {
+            border: 1px solid #eee;
+
+            padding: 30px 25px;
+
+            border-radius: 5px;
+
+            background: #fff;
+
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            border-color: #f7941d;
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .service-number {
+            color: #f7941d;
+
+            font-size: 30px;
+
+            font-weight: bold;
+
+            margin-bottom: 12px;
+        }
+
+        .service-card h3 {
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: 22px;
+
+            margin-bottom: 12px;
+
+            color: #222;
+        }
+
+        .service-card p {
+            color: #666;
+
+            font-size: 15px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =====================================================
+           WHY US
+        ===================================================== */
+
+        .why-section {
+            padding: 75px 20px;
+
+            background: #222;
+        }
+
+        .why-section .section-title h2 {
+            color: #fff;
+        }
+
+        .why-section .section-title p {
+            color: #ccc;
+        }
+
+        .why-grid {
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 20px;
+        }
+
+        .why-card {
+            text-align: center;
+
+            padding: 25px 15px;
+        }
+
+        .why-card-icon {
+            color: #f7941d;
+
+            font-size: 35px;
+
+            margin-bottom: 15px;
+        }
+
+        .why-card h3 {
+            color: #fff;
+
+            font-size: 18px;
+
+            margin-bottom: 10px;
+        }
+
+        .why-card p {
+            color: #bbb;
+
+            font-size: 14px;
+
+            line-height: 1.6;
+        }
+
+
+        /* =====================================================
+           CTA
+        ===================================================== */
+
+        .cta-section {
+            padding: 65px 20px;
+
+            background: #f7941d;
+
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            color: #fff;
+
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: 35px;
+
+            margin-bottom: 12px;
+        }
+
+        .cta-section p {
+            color: #fff;
+
+            margin-bottom: 25px;
+
+            line-height: 1.6;
+        }
+
+        .cta-buttons {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            display: inline-block;
+
+            padding: 13px 25px;
+
+            background: #222;
+
+            color: #fff;
+
+            border-radius: 4px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #fff;
+
+            color: #222;
+        }
+
+        .cta-button.white {
+            background: #fff;
+
+            color: #222;
+        }
+
+        .cta-button.white:hover {
+            background: #222;
+
+            color: #fff;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        .footer {
+            background: #171717;
+
+            color: #fff;
+
+            padding-top: 60px;
+        }
+
+        .footer-grid {
+            display: grid;
+
+            grid-template-columns:
+                1.3fr 1fr 1fr 1.3fr;
+
+            gap: 40px;
+
+            padding-bottom: 45px;
+        }
+
+        .footer-col h3 {
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: 21px;
+
+            margin-bottom: 20px;
+
+            color: #fff;
+        }
+
+        .footer-col h3 span {
+            color: #f7941d;
+        }
+
+        .footer-col p {
+            color: #aaa;
+
+            line-height: 1.8;
+
+            font-size: 14px;
+
+            margin-bottom: 10px;
+        }
+
+        .footer-menu li {
+            margin-bottom: 11px;
+        }
+
+        .footer-menu a {
+            color: #aaa;
+
+            font-size: 14px;
+
+            transition: 0.2s;
+        }
+
+        .footer-menu a:hover {
+            color: #f7941d;
+        }
+
+
+        /* FOOTER CONTACT */
+
+        .footer-contact li {
+            margin-bottom: 13px;
+
+            color: #aaa;
+
+            font-size: 14px;
+
+            line-height: 1.6;
+        }
+
+        .footer-contact strong {
+            color: #fff;
+        }
+
+        .footer-contact a:hover {
+            color: #f7941d;
+        }
+
+
+        /* FOOTER SOCIAL */
+
+        .footer-social {
+            display: flex;
+
+            gap: 12px;
+
+            margin-top: 18px;
+        }
+
+        .footer-social a {
+            width: 35px;
+            height: 35px;
+
+            border: 1px solid #555;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            color: #fff;
+
+            font-size: 14px;
+
+            transition: 0.3s;
+        }
+
+        .footer-social a:hover {
+            background: #f7941d;
+
+            border-color: #f7941d;
+        }
+
+
+        /* COPYRIGHT */
+
+        .copyright {
+            border-top: 1px solid #333;
+
+            padding: 20px;
+
+            text-align: center;
+
+            color: #888;
+
+            font-size: 13px;
+        }
+
+        .copyright span {
+            color: #f7941d;
+        }
+
+
+        /* =====================================================
+           FLOATING WHATSAPP + CALL
+           
+           LEFT SIDE
+           BOTTOM SE THODA UPAR
+        ===================================================== */
+
+        .floating-buttons {
+            position: fixed;
+
+            left: 25px;
+
+            bottom: 45px;
+
+            z-index: 99999;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            gap: 18px;
+        }
+
+
+        /* COMMON CIRCLE */
+
+        .floating-btn {
+            width: 74px;
+            height: 74px;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            color: #fff;
+
+            text-decoration: none;
+
+            font-size: 40px;
+
+            border: 4px solid #fff;
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.18);
+
+            transition: all 0.3s ease;
+        }
+
+
+        /* WHATSAPP GREEN */
+
+        .floating-whatsapp {
+            background: #25D366;
+        }
+
+        .floating-whatsapp:hover {
+            transform: scale(1.08);
+
+            background: #20bd5a;
+        }
+
+
+        /* CALL BLUE */
+
+        .floating-phone {
+            background: #008BCB;
+        }
+
+        .floating-phone:hover {
+            transform: scale(1.08);
+
+            background: #007caf;
+        }
+
+
+        /* =====================================================
+           TABLET
+        ===================================================== */
+
+        @media (max-width: 991px) {
+
+            .desktop-header {
+                display: none;
+            }
+
+            .mobile-header {
+                display: block;
+            }
+
+            .company-grid {
+                grid-template-columns: 1fr;
+
+                gap: 35px;
+            }
+
+            .mission-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 600px) {
+
+            .container {
+                max-width: calc(100% - 30px);
+            }
+
+
+            /* HERO */
+
+            .about-hero {
+                min-height: 230px;
+
+                padding: 45px 15px;
+            }
+
+            .about-hero h1 {
+                font-size: 35px;
+            }
+
+
+            /* SECTIONS */
+
+            .company-section,
+            .mission-section,
+            .services-section,
+            .why-section {
+                padding: 55px 15px;
+            }
+
+
+            .section-title {
+                margin-bottom: 30px;
+            }
+
+            .section-title h2 {
+                font-size: 29px;
+            }
+
+
+            /* MISSION */
+
+            .mission-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            /* SERVICES */
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            /* WHY */
+
+            .why-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+
+            /* FOOTER */
+
+            .footer {
+                padding-top: 45px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+
+                gap: 30px;
+            }
+
+
+            /* CTA */
+
+            .cta-section {
+                padding: 50px 15px;
+            }
+
+            .cta-section h2 {
+                font-size: 28px;
+            }
+
+
+            /* =================================================
+               FLOATING BUTTONS MOBILE
+            ================================================= */
+
+            .floating-buttons {
+                left: 18px;
+
+                bottom: 30px;
+
+                gap: 14px;
+            }
+
+            .floating-btn {
+                width: 62px;
+                height: 62px;
+
+                font-size: 32px;
+
+                border-width: 3px;
+            }
+
+        }
+
+
+        /* =====================================================
+           SMALL MOBILE
+        ===================================================== */
+
+        @media (max-width: 480px) {
+
+            .mobile-header {
+                height: 68px;
+            }
+
+            .mobile-header-inner {
+                height: 68px;
+
+                padding: 0 12px;
+            }
+
+            .mobile-logo img {
+                width: 170px;
+            }
+
+            .hamburger {
+                width: 48px;
+                height: 48px;
+            }
+
+            .offcanvas {
+                width: 280px;
+            }
+
+            .offcanvas-contact {
+                margin-top: 280px;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .company-info {
+                padding: 22px 18px;
+            }
+
+            .info-row {
+                flex-direction: column;
+
+                gap: 2px;
+            }
+
+
+            /* FLOATING */
+
+            .floating-buttons {
+                left: 15px;
+
+                bottom: 25px;
+
+                gap: 12px;
+            }
+
+            .floating-btn {
+                width: 58px;
+                height: 58px;
+
+                font-size: 29px;
+
+                border-width: 3px;
+            }
+
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+     HEADER START
+===================================================== -->
+
+    <header class="header-area">
+
+
+        <!-- =================================================
+         DESKTOP HEADER
+    ================================================= -->
+
+        <div class="desktop-header">
+
+
+            <!-- TOP AREA -->
+
+            <div class="header-top">
+
+                <div class="header-container">
+
+
+                    <!-- LOGO -->
+
+                    <div class="brand-logo">
+
+                        <a href="index.html">
+
+                            <img src="assets/img/logo/logo.png" alt="Grow India Pest Control">
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <a href="tel:+919540373378" class="phone-button">
+
+                        <span class="phone-icon">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                        </span>
+
+                        <span>
+                            +91 9540373378
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- NAVIGATION -->
+
+            <div class="desktop-navigation">
+
+                <div class="navigation-container">
+
+                    <nav>
+
+                        <ul class="desktop-menu">
+
+
+                            <!-- HOME -->
+
+                            <li>
+
+                                <a href="index.html">
+                                    Home
+                                </a>
+
+                            </li>
+
+
+                            <!-- ABOUT ACTIVE -->
+
+                            <li class="active">
+
+                                <a href="about-us.html">
+                                    About Us
+                                </a>
+
+                            </li>
+
+
+                            <!-- TERMITE -->
+
+                            <li>
+
+                                <a href="Termite-control.html">
+                                    Termite Control
+                                </a>
+
+                            </li>
+
+
+                            <!-- CONTACT -->
+
+                            <li>
+
+                                <a href="contact-us.html">
+                                    Contact Us
+                                </a>
+
+                            </li>
+
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+         MOBILE HEADER
+    ================================================= -->
+
+        <div class="mobile-header">
+
+            <div class="mobile-header-inner">
+
+
+                <!-- LOGO -->
+
+                <div class="mobile-logo">
+
+                    <a href="index.html">
+
+                        <img src="assets/img/logo/logo.png" alt="Grow India Pest Control">
+
+                    </a>
+
+                </div>
+
+
+                <!-- HAMBURGER -->
+
+                <button class="hamburger" id="openMenu" aria-label="Open Menu">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+         OVERLAY
+    ================================================= -->
+
+        <div class="offcanvas-overlay" id="menuOverlay"></div>
+
+
+        <!-- =================================================
+         MOBILE OFFCANVAS
+    ================================================= -->
+
+        <aside class="offcanvas" id="offcanvas">
+
+
+            <!-- CLOSE -->
+
+            <button class="offcanvas-close" id="closeMenu" aria-label="Close Menu">
+                ×
+            </button>
+
+
+            <!-- MOBILE MENU -->
+
+            <div class="mobile-navigation">
+
+                <nav>
+
+                    <ul class="mobile-menu">
+
+
+                        <li>
+
+                            <a href="index.html">
+                                Home
+                            </a>
+
+                        </li>
+
+
+                        <li class="active">
+
+                            <a href="about-us.html">
+                                About Us
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="Termite-control.html">
+                                Termite Control
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="contact-us.html">
+                                Contact Us
+                            </a>
+
+                        </li>
+
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="offcanvas-contact">
+
+
+                <!-- PHONE -->
+
+                <div class="contact-item">
+
+                    <span class="contact-icon">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                    </span>
+
+                    <a href="tel:+919540373378">
+                        +91-9540373378
+                    </a>
+
+                </div>
+
+
+                <!-- WHATSAPP -->
+
+                <div class="contact-item">
+
+                    <span class="contact-icon">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </span>
+
+                    <a href="https://wa.me/919650138387" target="_blank">
+                        +91-9650138387
+                    </a>
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="contact-item">
+
+                    <span class="contact-icon">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                    </span>
+
+                    <a href="mailto:varunthakurzrv786@gmail.com">
+                        varunthakurzrv786@gmail.com
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- SOCIAL -->
+
+            <div class="social-icons">
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="https://wa.me/919650138387" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+            </div>
+
+
+        </aside>
+
+    </header>
+
+
+    <!-- =====================================================
+     ABOUT HERO
+===================================================== -->
+
+    <section class="about-hero">
+
+        <div>
+
+            <h1>
+                About <span>Us</span>
+            </h1>
+
+            <p>
+                Professional Pest Control Solutions You Can Trust
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+     COMPANY SECTION
+===================================================== -->
+
+    <section class="company-section">
+
+        <div class="container">
+
+            <div class="company-grid">
+
+
+                <!-- CONTENT -->
+
+                <div class="company-content">
+
+                    <h2>
+                        About <span>Grow India</span>
+                    </h2>
+
+                    <p>
+                        Grow India Pest Control Service (Regd) is a
+                        professional pest control service provider
+                        serving residential and commercial customers
+                        in Delhi and surrounding areas.
+                    </p>
+
+                    <p>
+                        We focus on practical pest management
+                        solutions designed to help customers maintain
+                        cleaner, safer and more comfortable spaces.
+                    </p>
+
+                    <p>
+                        Our services include termite control and
+                        general pest management solutions. We aim to
+                        provide clear communication, professional
+                        service and convenient support for our
+                        customers.
+                    </p>
+
+                </div>
+
+
+                <!-- COMPANY INFORMATION -->
+
+                <div class="company-info">
+
+                    <h3>
+                        Company Information
+                    </h3>
+
+
+                    <div class="info-row">
+
+                        <strong>
+                            Company:
+                        </strong>
+
+                        <span>
+                            Grow India Pest Control Service (Regd)
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <strong>
+                            Address:
+                        </strong>
+
+                        <span>
+                            Q-127, Dilshad Garden,
+                            Near Deer Park,
+                            Delhi - 110095
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <strong>
+                            Phone:
+                        </strong>
+
+                        <a href="tel:+919540373378">
+                            9540373378
+                        </a>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <strong>
+                            WhatsApp:
+                        </strong>
+
+                        <a href="https://wa.me/919650138387" target="_blank">
+                            9650138387
+                        </a>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <strong>
+                            Email:
+                        </strong>
+
+                        <a href="mailto:varunthakurzrv786@gmail.com">
+                            varunthakurzrv786@gmail.com
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+     FOCUS SECTION
+===================================================== -->
+
+    <section class="mission-section">
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+                <h2>
+                    What We <span>Focus On</span>
+                </h2>
+
+                <p>
+                    Our approach is centered around dependable
+                    service, customer communication and practical
+                    pest management.
+                </p>
+
+            </div>
+
+
+            <div class="mission-grid">
+
+
+                <div class="mission-card">
+
+                    <div class="mission-icon">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                    </div>
+
+                    <h3>
+                        Reliable Service
+                    </h3>
+
+                    <p>
+                        We focus on providing dependable pest control
+                        support for residential and commercial
+                        requirements.
+                    </p>
+
+                </div>
+
+
+                <div class="mission-card">
+
+                    <div class="mission-icon">
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </div>
+
+                    <h3>
+                        Customer Care
+                    </h3>
+
+                    <p>
+                        We keep customer communication simple and
+                        provide service information according to the
+                        requirement.
+                    </p>
+
+                </div>
+
+
+                <div class="mission-card">
+
+                    <div class="mission-icon">
+
+                        <i class="fa-solid fa-house"></i>
+
+                    </div>
+
+                    <h3>
+                        Pest Management
+                    </h3>
+
+                    <p>
+                        Our services are designed to address common
+                        pest-related problems in homes, offices and
+                        other properties.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+     SERVICES
+===================================================== -->
+
+    <section class="services-section">
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+                <h2>
+                    Our <span>Services</span>
+                </h2>
+
+                <p>
+                    Pest control services for residential and
+                    commercial requirements.
+                </p>
+
+            </div>
+
+
+            <div class="services-grid">
+
+
+                <div class="service-card">
+
+                    <div class="service-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Termite Control
+                    </h3>
+
+                    <p>
+                        Termite control solutions for properties
+                        affected by or requiring protection from
+                        termite-related problems.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Residential Pest Control
+                    </h3>
+
+                    <p>
+                        Pest management services for homes and
+                        residential properties.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Commercial Pest Control
+                    </h3>
+
+                    <p>
+                        Pest control support for offices, shops and
+                        other commercial spaces.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+     WHY US
+===================================================== -->
+
+    <section class="why-section">
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+                <h2>
+                    Why <span>Grow India?</span>
+                </h2>
+
+                <p>
+                    A straightforward approach to pest control
+                    service and customer support.
+                </p>
+
+            </div>
+
+
+            <div class="why-grid">
+
+
+                <div class="why-card">
+
+                    <div class="why-card-icon">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                    <h3>
+                        Professional Service
+                    </h3>
+
+                    <p>
+                        Service focused on the specific pest-control
+                        requirement.
+                    </p>
+
+                </div>
+
+
+                <div class="why-card">
+
+                    <div class="why-card-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <h3>
+                        Easy Contact
+                    </h3>
+
+                    <p>
+                        Reach us directly by phone or WhatsApp for
+                        service enquiries.
+                    </p>
+
+                </div>
+
+
+                <div class="why-card">
+
+                    <div class="why-card-icon">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+
+                    <h3>
+                        Residential & Commercial
+                    </h3>
+
+                    <p>
+                        Services for different types of residential
+                        and commercial properties.
+                    </p>
+
+                </div>
+
+
+                <div class="why-card">
+
+                    <div class="why-card-icon">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <h3>
+                        Customer Focus
+                    </h3>
+
+                    <p>
+                        We aim to make the service process clear and
+                        convenient for customers.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+     CTA
+===================================================== -->
+
+    <section class="cta-section">
+
+        <div class="container">
+
+            <h2>
+                Need Pest Control Service?
+            </h2>
+
+            <p>
+                Contact Grow India Pest Control Service for
+                enquiries and service information.
+            </p>
+
+
+            <div class="cta-buttons">
+
+                <a href="tel:+919540373378" class="cta-button">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    &nbsp; Call Now
+
+                </a>
+
+
+                <a href="https://wa.me/919650138387" class="cta-button white" target="_blank">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    &nbsp; WhatsApp Us
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+     FOOTER
+===================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+
+                <!-- ABOUT -->
+
+                <div class="footer-col">
+
+                    <h3>
+                        Grow <span>India</span>
+                    </h3>
+
+                    <p>
+                        Grow India Pest Control Service (Regd)
+                        provides pest control solutions for
+                        residential and commercial requirements.
+                    </p>
+
+                    <p>
+                        Professional pest management with a focus
+                        on reliable service and customer support.
+                    </p>
+
+
+                    <div class="footer-social">
+
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                        <a href="https://wa.me/919650138387" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- QUICK LINKS -->
+
+                <div class="footer-col">
+
+                    <h3>
+                        Quick <span>Links</span>
+                    </h3>
+
+                    <ul class="footer-menu">
+
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about-us.html">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="Termite-control.html">
+                                Termite Control
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact-us.html">
+                                Contact Us
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- SERVICES -->
+
+                <div class="footer-col">
+
+                    <h3>
+                        Our <span>Services</span>
+                    </h3>
+
+                    <ul class="footer-menu">
+
+                        <li>
+                            <a href="Termite-control.html">
+                                Termite Control
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="Termite-control.html">
+                                Residential Pest Control
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="Termite-control.html">
+                                Commercial Pest Control
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact-us.html">
+                                Service Enquiry
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- CONTACT -->
+
+                <div class="footer-col">
+
+                    <h3>
+                        Contact <span>Us</span>
+                    </h3>
+
+                    <ul class="footer-contact">
+
+                        <li>
+
+                            <strong>
+                                Company:
+                            </strong>
+
+                            <br>
+
+                            Grow India Pest Control Service (Regd)
+
+                        </li>
+
+
+                        <li>
+
+                            <strong>
+                                Address:
+                            </strong>
+
+                            <br>
+
+                            Q-127 Dilshad Garden,
+                            Near Deer Park,
+                            Delhi - 110095
+
+                        </li>
+
+
+                        <li>
+
+                            <strong>
+                                Phone:
+                            </strong>
+
+                            <br>
+
+                            <a href="tel:+919540373378">
+                                9540373378
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <strong>
+                                WhatsApp:
+                            </strong>
+
+                            <br>
+
+                            <a href="https://wa.me/919650138387" target="_blank">
+                                9650138387
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <strong>
+                                Email:
+                            </strong>
+
+                            <br>
+
+                            <a href="mailto:varunthakurzrv786@gmail.com">
+                                varunthakurzrv786@gmail.com
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- COPYRIGHT -->
+
+        <div class="copyright">
+
+            © 2026
+            <span>
+                Grow India Pest Control Service
+            </span>
+            . All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+     FLOATING BUTTONS
+     WHATSAPP TOP
+     CALL BOTTOM
+===================================================== -->
+
+    <div class="floating-buttons">
+
+
+        <!-- WHATSAPP -->
+
+        <a href="https://wa.me/919650138387" class="floating-btn floating-whatsapp" target="_blank"
+            aria-label="WhatsApp Grow India Pest Control">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+        </a>
+
+
+        <!-- CALL -->
+
+        <a href="tel:+919540373378" class="floating-btn floating-phone" aria-label="Call Grow India Pest Control">
+
+            <i class="fa-solid fa-phone"></i>
+
+        </a>
+
+
+    </div>
+
+
+    <!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+    <script>
+
+        /* ==========================================
+           MENU ELEMENTS
+        ========================================== */
+
+        const openMenu =
+            document.getElementById("openMenu");
+
+        const closeMenu =
+            document.getElementById("closeMenu");
+
+        const menuOverlay =
+            document.getElementById("menuOverlay");
+
+
+        /* ==========================================
+           OPEN MOBILE MENU
+        ========================================== */
+
+        openMenu.addEventListener("click", function () {
+
+            document.body.classList.add("menu-open");
+
+        });
+
+
+        /* ==========================================
+           CLOSE MOBILE MENU
+        ========================================== */
+
+        closeMenu.addEventListener("click", function () {
+
+            document.body.classList.remove("menu-open");
+
+        });
+
+
+        /* ==========================================
+           CLOSE ON OVERLAY CLICK
+        ========================================== */
+
+        menuOverlay.addEventListener("click", function () {
+
+            document.body.classList.remove("menu-open");
+
+        });
+
+
+        /* ==========================================
+           CLOSE AFTER MENU LINK CLICK
+        ========================================== */
+
+        const mobileLinks =
+            document.querySelectorAll(".mobile-menu a");
+
+
+        mobileLinks.forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                document.body.classList.remove("menu-open");
+
+            });
+
+        });
+
+
+        /* ==========================================
+           ESC KEY CLOSE
+        ========================================== */
+
+        document.addEventListener("keydown", function (event) {
+
+            if (event.key === "Escape") {
+
+                document.body.classList.remove("menu-open");
+
+            }
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,3238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Termite Control | Grow India Pest Control Service
+    </title>
+
+
+    <!-- FONT AWESOME -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <style>
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            color: #333;
+
+            background: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        .header-area {
+            width: 100%;
+            background: #fff;
+        }
+
+
+        /* =====================================================
+           DESKTOP HEADER
+        ===================================================== */
+
+        .desktop-header {
+            display: block;
+            width: 100%;
+        }
+
+
+        /* TOP */
+
+        .header-top {
+            width: 100%;
+            height: 90px;
+            background: #fff;
+        }
+
+
+        .header-container {
+            width: 1160px;
+            max-width: calc(100% - 40px);
+
+            height: 100%;
+
+            margin: auto;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+        }
+
+
+        /* LOGO */
+
+        .brand-logo img {
+            width: 220px;
+        }
+
+
+        /* PHONE BUTTON */
+
+        .phone-button {
+            min-width: 195px;
+
+            height: 56px;
+
+            padding: 0 20px;
+
+            border: 1px solid #555;
+
+            border-radius: 7px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 8px;
+
+            color: #333;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 15px;
+
+            transition: 0.3s;
+        }
+
+
+        .phone-button:hover {
+            background: #f7941d;
+
+            border-color: #f7941d;
+
+            color: #fff;
+        }
+
+
+        .phone-icon {
+            width: 27px;
+
+            height: 27px;
+
+            border: 1px solid #777;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 12px;
+        }
+
+
+        /* =====================================================
+           DESKTOP NAVIGATION
+        ===================================================== */
+
+        .desktop-navigation {
+            width: 100%;
+
+            height: 58px;
+
+            background: #222;
+        }
+
+
+        .navigation-container {
+            width: 1160px;
+
+            max-width: 100%;
+
+            height: 100%;
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content: center;
+        }
+
+
+        .desktop-menu {
+            height: 100%;
+
+            display: flex;
+
+            align-items: stretch;
+        }
+
+
+        .desktop-menu li {
+            height: 100%;
+        }
+
+
+        .desktop-menu a {
+            height: 100%;
+
+            padding: 0 28px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            color: #fff;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 16px;
+
+            font-weight: bold;
+
+            text-transform: uppercase;
+
+            white-space: nowrap;
+
+            transition: 0.3s;
+        }
+
+
+        .desktop-menu li:hover a {
+            background: #f7941d;
+        }
+
+
+        /* TERMITE ACTIVE */
+
+        .desktop-menu li.active a {
+            background: #f7941d;
+        }
+
+
+        /* =====================================================
+           MOBILE HEADER
+        ===================================================== */
+
+        .mobile-header {
+            display: none;
+
+            width: 100%;
+
+            height: 70px;
+
+            background: #fff;
+
+            position: relative;
+
+            z-index: 1000;
+
+            box-shadow:
+                0 1px 5px rgba(0,0,0,0.12);
+        }
+
+
+        .mobile-header-inner {
+            width: 100%;
+
+            height: 70px;
+
+            padding: 0 18px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+        }
+
+
+        .mobile-logo img {
+            width: 175px;
+        }
+
+
+        /* =====================================================
+           HAMBURGER
+        ===================================================== */
+
+        .hamburger {
+            width: 52px;
+
+            height: 52px;
+
+            border: none;
+
+            background: transparent;
+
+            cursor: pointer;
+
+            padding: 10px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 5px;
+        }
+
+
+        .hamburger span {
+            width: 27px;
+
+            height: 2px;
+
+            display: block;
+
+            background: #222;
+        }
+
+
+        /* =====================================================
+           OVERLAY
+        ===================================================== */
+
+        .offcanvas-overlay {
+            position: fixed;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+
+            height: 100vh;
+
+            background: rgba(0,0,0,0.45);
+
+            opacity: 0;
+
+            visibility: hidden;
+
+            z-index: 1998;
+
+            transition: 0.3s;
+        }
+
+
+        body.menu-open {
+            overflow: hidden;
+        }
+
+
+        body.menu-open .offcanvas {
+            transform: translateX(0);
+        }
+
+
+        body.menu-open .offcanvas-overlay {
+            opacity: 1;
+
+            visibility: visible;
+        }
+
+
+        /* =====================================================
+           OFFCANVAS
+        ===================================================== */
+
+        .offcanvas {
+            position: fixed;
+
+            top: 0;
+
+            left: 0;
+
+            width: 280px;
+
+            max-width: 82vw;
+
+            height: 100vh;
+
+            background: #fff;
+
+            z-index: 1999;
+
+            overflow-y: auto;
+
+            transform: translateX(-100%);
+
+            transition:
+                transform 0.35s ease;
+
+            box-shadow:
+                3px 0 15px rgba(0,0,0,0.18);
+        }
+
+
+        /* CLOSE */
+
+        .offcanvas-close {
+            position: absolute;
+
+            top: 0;
+
+            right: 0;
+
+            width: 48px;
+
+            height: 48px;
+
+            border: none;
+
+            background: #f7941d;
+
+            color: #fff;
+
+            font-size: 29px;
+
+            cursor: pointer;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+        }
+
+
+        /* =====================================================
+           MOBILE MENU
+        ===================================================== */
+
+        .mobile-navigation {
+            padding-top: 75px;
+        }
+
+
+        .mobile-menu li a {
+            display: block;
+
+            padding: 14px 17px;
+
+            color: #333;
+
+            font-size: 16px;
+
+            transition: 0.25s;
+        }
+
+
+        .mobile-menu li a:hover {
+            background: #f5f5f5;
+
+            color: #f7941d;
+        }
+
+
+        .mobile-menu li.active a {
+            background: #f7941d;
+
+            color: #fff;
+        }
+
+
+        /* =====================================================
+           MOBILE CONTACT
+        ===================================================== */
+
+        .offcanvas-contact {
+            margin-top: 300px;
+
+            padding: 20px 17px 5px;
+
+            border-top: 1px solid #eee;
+        }
+
+
+        .contact-item {
+            display: flex;
+
+            align-items: flex-start;
+
+            gap: 12px;
+
+            margin-bottom: 18px;
+
+            color: #555;
+
+            font-size: 14px;
+
+            line-height: 1.5;
+        }
+
+
+        .contact-icon {
+            width: 20px;
+
+            min-width: 20px;
+
+            color: #f7941d;
+        }
+
+
+        .contact-item a {
+            word-break: break-word;
+        }
+
+
+        /* =====================================================
+           SOCIAL
+        ===================================================== */
+
+        .social-icons {
+            padding: 8px 17px 25px;
+
+            display: flex;
+
+            gap: 20px;
+        }
+
+
+        .social-icons a {
+            color: #555;
+
+            font-size: 17px;
+        }
+
+
+        .social-icons a:hover {
+            color: #f7941d;
+        }
+
+
+        /* =====================================================
+           COMMON CONTAINER
+        ===================================================== */
+
+        .container {
+            width: 1160px;
+
+            max-width: calc(100% - 40px);
+
+            margin: auto;
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .termite-hero {
+            min-height: 330px;
+
+            padding: 65px 20px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.62),
+                    rgba(0,0,0,0.62)
+                ),
+                linear-gradient(
+                    135deg,
+                    #354f0b,
+                    #111
+                );
+        }
+
+
+        .termite-hero h1 {
+            color: #fff;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 48px;
+
+            margin-bottom: 14px;
+        }
+
+
+        .termite-hero h1 span {
+            color: #f7941d;
+        }
+
+
+        .termite-hero p {
+            color: #fff;
+
+            font-size: 17px;
+
+            line-height: 1.6;
+        }
+
+
+        /* =====================================================
+           SECTION TITLE
+        ===================================================== */
+
+        .section-title {
+            text-align: center;
+
+            margin-bottom: 45px;
+        }
+
+
+        .section-title h2 {
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 36px;
+
+            color: #222;
+
+            margin-bottom: 12px;
+        }
+
+
+        .section-title h2 span {
+            color: #f7941d;
+        }
+
+
+        .section-title p {
+            max-width: 750px;
+
+            margin: auto;
+
+            color: #666;
+
+            line-height: 1.7;
+
+            font-size: 15px;
+        }
+
+
+        /* =====================================================
+           INTRO SECTION
+        ===================================================== */
+
+        .intro-section {
+            padding: 75px 20px;
+
+            background: #fff;
+        }
+
+
+        .intro-grid {
+            display: grid;
+
+            grid-template-columns:
+                1.15fr
+                0.85fr;
+
+            gap: 55px;
+
+            align-items: center;
+        }
+
+
+        .intro-content h2 {
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 35px;
+
+            color: #222;
+
+            margin-bottom: 20px;
+        }
+
+
+        .intro-content h2 span {
+            color: #f7941d;
+        }
+
+
+        .intro-content p {
+            color: #555;
+
+            font-size: 16px;
+
+            line-height: 1.8;
+
+            margin-bottom: 16px;
+        }
+
+
+        /* =====================================================
+           INFO BOX
+        ===================================================== */
+
+        .termite-info-box {
+            background: #f7f7f7;
+
+            padding: 35px;
+
+            border-left:
+                4px solid #f7941d;
+
+            border-radius: 4px;
+        }
+
+
+        .termite-info-box h3 {
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 25px;
+
+            margin-bottom: 20px;
+
+            color: #222;
+        }
+
+
+        .info-list li {
+            position: relative;
+
+            padding-left: 28px;
+
+            margin-bottom: 15px;
+
+            color: #555;
+
+            line-height: 1.6;
+        }
+
+
+        .info-list li i {
+            position: absolute;
+
+            left: 0;
+
+            top: 4px;
+
+            color: #f7941d;
+        }
+
+
+        /* =====================================================
+           TERMITE PROBLEMS
+        ===================================================== */
+
+        .problem-section {
+            padding: 75px 20px;
+
+            background: #f7f7f7;
+        }
+
+
+        .problem-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+
+        .problem-card {
+            background: #fff;
+
+            padding: 32px 25px;
+
+            text-align: center;
+
+            border-radius: 5px;
+
+            box-shadow:
+                0 5px 20px
+                rgba(0,0,0,0.06);
+
+            transition: 0.3s;
+        }
+
+
+        .problem-card:hover {
+            transform: translateY(-5px);
+        }
+
+
+        .problem-icon {
+            width: 65px;
+
+            height: 65px;
+
+            margin: 0 auto 20px;
+
+            border-radius: 50%;
+
+            background: #f7941d;
+
+            color: #fff;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 27px;
+        }
+
+
+        .problem-card h3 {
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 22px;
+
+            color: #222;
+
+            margin-bottom: 12px;
+        }
+
+
+        .problem-card p {
+            color: #666;
+
+            line-height: 1.7;
+
+            font-size: 15px;
+        }
+
+
+        /* =====================================================
+           CONTROL PROCESS
+        ===================================================== */
+
+        .process-section {
+            padding: 75px 20px;
+
+            background: #fff;
+        }
+
+
+        .process-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 20px;
+        }
+
+
+        .process-card {
+            position: relative;
+
+            padding: 30px 20px;
+
+            text-align: center;
+
+            border:
+                1px solid #eee;
+
+            border-radius: 5px;
+
+            background: #fff;
+
+            transition: 0.3s;
+        }
+
+
+        .process-card:hover {
+            border-color: #f7941d;
+
+            box-shadow:
+                0 8px 25px
+                rgba(0,0,0,0.08);
+        }
+
+
+        .process-number {
+            width: 50px;
+
+            height: 50px;
+
+            margin: 0 auto 18px;
+
+            border-radius: 50%;
+
+            background: #222;
+
+            color: #fff;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 18px;
+
+            font-weight: bold;
+        }
+
+
+        .process-card h3 {
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 20px;
+
+            color: #222;
+
+            margin-bottom: 12px;
+        }
+
+
+        .process-card p {
+            color: #666;
+
+            font-size: 14px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =====================================================
+           BENEFITS
+        ===================================================== */
+
+        .benefits-section {
+            padding: 75px 20px;
+
+            background: #222;
+        }
+
+
+        .benefits-section .section-title h2 {
+            color: #fff;
+        }
+
+
+        .benefits-section .section-title p {
+            color: #ccc;
+        }
+
+
+        .benefits-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 20px;
+        }
+
+
+        .benefit-card {
+            text-align: center;
+
+            padding: 25px 15px;
+        }
+
+
+        .benefit-icon {
+            color: #f7941d;
+
+            font-size: 35px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .benefit-card h3 {
+            color: #fff;
+
+            font-size: 18px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .benefit-card p {
+            color: #bbb;
+
+            font-size: 14px;
+
+            line-height: 1.6;
+        }
+
+
+        /* =====================================================
+           FAQ
+        ===================================================== */
+
+        .faq-section {
+            padding: 75px 20px;
+
+            background: #fff;
+        }
+
+
+        .faq-container {
+            max-width: 850px;
+
+            margin: auto;
+        }
+
+
+        .faq-item {
+            border:
+                1px solid #e6e6e6;
+
+            margin-bottom: 12px;
+
+            border-radius: 4px;
+
+            overflow: hidden;
+        }
+
+
+        .faq-question {
+            width: 100%;
+
+            border: none;
+
+            background: #f8f8f8;
+
+            padding: 18px 20px;
+
+            text-align: left;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+            font-weight: bold;
+
+            color: #333;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 15px;
+        }
+
+
+        .faq-question i {
+            color: #f7941d;
+
+            transition: 0.3s;
+        }
+
+
+        .faq-answer {
+            display: none;
+
+            padding: 18px 20px;
+
+            color: #666;
+
+            line-height: 1.7;
+
+            font-size: 15px;
+        }
+
+
+        .faq-item.open
+        .faq-answer {
+            display: block;
+        }
+
+
+        .faq-item.open
+        .faq-question i {
+            transform:
+                rotate(180deg);
+        }
+
+
+        /* =====================================================
+           CTA
+        ===================================================== */
+
+        .cta-section {
+            padding: 65px 20px;
+
+            background: #f7941d;
+
+            text-align: center;
+        }
+
+
+        .cta-section h2 {
+            color: #fff;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 35px;
+
+            margin-bottom: 12px;
+        }
+
+
+        .cta-section p {
+            color: #fff;
+
+            margin-bottom: 25px;
+
+            line-height: 1.6;
+        }
+
+
+        .cta-buttons {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+        }
+
+
+        .cta-button {
+            display: inline-block;
+
+            padding: 13px 25px;
+
+            background: #222;
+
+            color: #fff;
+
+            border-radius: 4px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+
+        .cta-button:hover {
+            background: #fff;
+
+            color: #222;
+        }
+
+
+        .cta-button.white {
+            background: #fff;
+
+            color: #222;
+        }
+
+
+        .cta-button.white:hover {
+            background: #222;
+
+            color: #fff;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        .footer {
+            background: #171717;
+
+            color: #fff;
+
+            padding-top: 60px;
+        }
+
+
+        .footer-grid {
+            display: grid;
+
+            grid-template-columns:
+                1.3fr 1fr 1fr 1.3fr;
+
+            gap: 40px;
+
+            padding-bottom: 45px;
+        }
+
+
+        .footer-col h3 {
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 21px;
+
+            margin-bottom: 20px;
+
+            color: #fff;
+        }
+
+
+        .footer-col h3 span {
+            color: #f7941d;
+        }
+
+
+        .footer-col p {
+            color: #aaa;
+
+            line-height: 1.8;
+
+            font-size: 14px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .footer-menu li {
+            margin-bottom: 11px;
+        }
+
+
+        .footer-menu a {
+            color: #aaa;
+
+            font-size: 14px;
+
+            transition: 0.2s;
+        }
+
+
+        .footer-menu a:hover {
+            color: #f7941d;
+        }
+
+
+        /* CONTACT */
+
+        .footer-contact li {
+            margin-bottom: 13px;
+
+            color: #aaa;
+
+            font-size: 14px;
+
+            line-height: 1.6;
+        }
+
+
+        .footer-contact strong {
+            color: #fff;
+        }
+
+
+        .footer-contact a:hover {
+            color: #f7941d;
+        }
+
+
+        /* SOCIAL */
+
+        .footer-social {
+            display: flex;
+
+            gap: 12px;
+
+            margin-top: 18px;
+        }
+
+
+        .footer-social a {
+            width: 35px;
+
+            height: 35px;
+
+            border:
+                1px solid #555;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            color: #fff;
+
+            font-size: 14px;
+
+            transition: 0.3s;
+        }
+
+
+        .footer-social a:hover {
+            background: #f7941d;
+
+            border-color: #f7941d;
+        }
+
+
+        /* COPYRIGHT */
+
+        .copyright {
+            border-top:
+                1px solid #333;
+
+            padding: 20px;
+
+            text-align: center;
+
+            color: #888;
+
+            font-size: 13px;
+        }
+
+
+        .copyright span {
+            color: #f7941d;
+        }
+
+
+        /* =====================================================
+           FLOATING WHATSAPP + CALL
+        ===================================================== */
+
+        .floating-buttons {
+            position: fixed;
+
+            left: 25px;
+
+            bottom: 45px;
+
+            z-index: 99999;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            gap: 18px;
+        }
+
+
+        .floating-btn {
+            width: 74px;
+
+            height: 74px;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            color: #fff;
+
+            text-decoration: none;
+
+            font-size: 40px;
+
+            border: 4px solid #fff;
+
+            box-shadow:
+                0 5px 20px
+                rgba(0,0,0,0.18);
+
+            transition:
+                all 0.3s ease;
+        }
+
+
+        /* WHATSAPP */
+
+        .floating-whatsapp {
+            background: #25D366;
+        }
+
+
+        .floating-whatsapp:hover {
+            transform: scale(1.08);
+
+            background: #20bd5a;
+        }
+
+
+        /* CALL */
+
+        .floating-phone {
+            background: #008BCB;
+        }
+
+
+        .floating-phone:hover {
+            transform: scale(1.08);
+
+            background: #007caf;
+        }
+
+
+        /* =====================================================
+           TABLET
+        ===================================================== */
+
+        @media (max-width: 991px) {
+
+            .desktop-header {
+                display: none;
+            }
+
+
+            .mobile-header {
+                display: block;
+            }
+
+
+            .intro-grid {
+                grid-template-columns: 1fr;
+
+                gap: 35px;
+            }
+
+
+            .problem-grid {
+                grid-template-columns:
+                    1fr 1fr;
+            }
+
+
+            .process-grid {
+                grid-template-columns:
+                    1fr 1fr;
+            }
+
+
+            .benefits-grid {
+                grid-template-columns:
+                    1fr 1fr;
+            }
+
+
+            .footer-grid {
+                grid-template-columns:
+                    1fr 1fr;
+            }
+
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 600px) {
+
+            .container {
+                max-width:
+                    calc(100% - 30px);
+            }
+
+
+            /* HERO */
+
+            .termite-hero {
+                min-height: 230px;
+
+                padding:
+                    45px 15px;
+            }
+
+
+            .termite-hero h1 {
+                font-size: 35px;
+            }
+
+
+            .termite-hero p {
+                font-size: 15px;
+            }
+
+
+            /* SECTIONS */
+
+            .intro-section,
+            .problem-section,
+            .process-section,
+            .benefits-section,
+            .faq-section {
+                padding:
+                    55px 15px;
+            }
+
+
+            .section-title {
+                margin-bottom: 30px;
+            }
+
+
+            .section-title h2 {
+                font-size: 29px;
+            }
+
+
+            /* PROBLEM */
+
+            .problem-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            /* PROCESS */
+
+            .process-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            /* BENEFITS */
+
+            .benefits-grid {
+                grid-template-columns:
+                    1fr 1fr;
+            }
+
+
+            /* FOOTER */
+
+            .footer {
+                padding-top: 45px;
+            }
+
+
+            .footer-grid {
+                grid-template-columns:
+                    1fr;
+
+                gap: 30px;
+            }
+
+
+            /* CTA */
+
+            .cta-section {
+                padding:
+                    50px 15px;
+            }
+
+
+            .cta-section h2 {
+                font-size: 28px;
+            }
+
+
+            /* FLOATING */
+
+            .floating-buttons {
+                left: 18px;
+
+                bottom: 30px;
+
+                gap: 14px;
+            }
+
+
+            .floating-btn {
+                width: 62px;
+
+                height: 62px;
+
+                font-size: 32px;
+
+                border-width: 3px;
+            }
+
+        }
+
+
+        /* =====================================================
+           SMALL MOBILE
+        ===================================================== */
+
+        @media (max-width: 480px) {
+
+            .mobile-header {
+                height: 68px;
+            }
+
+
+            .mobile-header-inner {
+                height: 68px;
+
+                padding: 0 12px;
+            }
+
+
+            .mobile-logo img {
+                width: 170px;
+            }
+
+
+            .hamburger {
+                width: 48px;
+
+                height: 48px;
+            }
+
+
+            .offcanvas {
+                width: 280px;
+            }
+
+
+            .offcanvas-contact {
+                margin-top: 280px;
+            }
+
+
+            .benefits-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .termite-info-box {
+                padding: 22px 18px;
+            }
+
+
+            /* FLOATING */
+
+            .floating-buttons {
+                left: 15px;
+
+                bottom: 25px;
+
+                gap: 12px;
+            }
+
+
+            .floating-btn {
+                width: 58px;
+
+                height: 58px;
+
+                font-size: 29px;
+
+                border-width: 3px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER START
+===================================================== -->
+
+<header class="header-area">
+
+
+    <!-- =================================================
+         DESKTOP HEADER
+    ================================================= -->
+
+    <div class="desktop-header">
+
+
+        <!-- TOP -->
+
+        <div class="header-top">
+
+            <div class="header-container">
+
+
+                <!-- LOGO -->
+
+                <div class="brand-logo">
+
+                    <a href="index.html">
+
+                        <img
+                            src="assets/img/logo/logo.png"
+                            alt="Grow India Pest Control"
+                        >
+
+                    </a>
+
+                </div>
+
+
+                <!-- PHONE -->
+
+                <a
+                    href="tel:+919540373378"
+                    class="phone-button"
+                >
+
+                    <span class="phone-icon">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                    </span>
+
+                    <span>
+                        +91 9540373378
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <div class="desktop-navigation">
+
+            <div class="navigation-container">
+
+                <nav>
+
+                    <ul class="desktop-menu">
+
+
+                        <!-- HOME -->
+
+                        <li>
+
+                            <a href="index.html">
+                                Home
+                            </a>
+
+                        </li>
+
+
+                        <!-- ABOUT -->
+
+                        <li>
+
+                            <a href="about-us.html">
+                                About Us
+                            </a>
+
+                        </li>
+
+
+                        <!-- TERMITE ACTIVE -->
+
+                        <li class="active">
+
+                            <a href="Termite-control.html">
+                                Termite Control
+                            </a>
+
+                        </li>
+
+
+                        <!-- CONTACT -->
+
+                        <li>
+
+                            <a href="contact-us.html">
+                                Contact Us
+                            </a>
+
+                        </li>
+
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         MOBILE HEADER
+    ================================================= -->
+
+    <div class="mobile-header">
+
+        <div class="mobile-header-inner">
+
+
+            <!-- LOGO -->
+
+            <div class="mobile-logo">
+
+                <a href="index.html">
+
+                    <img
+                        src="assets/img/logo/logo.png"
+                        alt="Grow India Pest Control"
+                    >
+
+                </a>
+
+            </div>
+
+
+            <!-- HAMBURGER -->
+
+            <button
+                class="hamburger"
+                id="openMenu"
+                aria-label="Open Menu"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         OVERLAY
+    ================================================= -->
+
+    <div
+        class="offcanvas-overlay"
+        id="menuOverlay"
+    ></div>
+
+
+    <!-- =================================================
+         OFFCANVAS
+    ================================================= -->
+
+    <aside
+        class="offcanvas"
+        id="offcanvas"
+    >
+
+
+        <!-- CLOSE -->
+
+        <button
+            class="offcanvas-close"
+            id="closeMenu"
+            aria-label="Close Menu"
+        >
+            ×
+        </button>
+
+
+        <!-- MOBILE MENU -->
+
+        <div class="mobile-navigation">
+
+            <nav>
+
+                <ul class="mobile-menu">
+
+
+                    <!-- HOME -->
+
+                    <li>
+
+                        <a href="index.html">
+                            Home
+                        </a>
+
+                    </li>
+
+
+                    <!-- ABOUT -->
+
+                    <li>
+
+                        <a href="about-us.html">
+                            About Us
+                        </a>
+
+                    </li>
+
+
+                    <!-- TERMITE ACTIVE -->
+
+                    <li class="active">
+
+                        <a href="Termite-control.html">
+                            Termite Control
+                        </a>
+
+                    </li>
+
+
+                    <!-- CONTACT -->
+
+                    <li>
+
+                        <a href="contact-us.html">
+                            Contact Us
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div class="offcanvas-contact">
+
+
+            <!-- PHONE -->
+
+            <div class="contact-item">
+
+                <span class="contact-icon">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </span>
+
+                <a href="tel:+919540373378">
+                    +91-9540373378
+                </a>
+
+            </div>
+
+
+            <!-- WHATSAPP -->
+
+            <div class="contact-item">
+
+                <span class="contact-icon">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </span>
+
+                <a
+                    href="https://wa.me/919650138387"
+                    target="_blank"
+                >
+                    +91-9650138387
+                </a>
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="contact-item">
+
+                <span class="contact-icon">
+
+                    <i class="fa-regular fa-envelope"></i>
+
+                </span>
+
+                <a href="mailto:varunthakurzrv786@gmail.com">
+                    varunthakurzrv786@gmail.com
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- SOCIAL -->
+
+        <div class="social-icons">
+
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a
+                href="https://wa.me/919650138387"
+                target="_blank"
+            >
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+        </div>
+
+
+    </aside>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="termite-hero">
+
+    <div>
+
+        <h1>
+            <span>Termite</span> Control
+        </h1>
+
+        <p>
+            Professional termite control solutions
+            for homes and commercial properties.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<section class="intro-section">
+
+    <div class="container">
+
+        <div class="intro-grid">
+
+
+            <!-- CONTENT -->
+
+            <div class="intro-content">
+
+                <h2>
+                    Professional
+                    <span>Termite Control</span>
+                </h2>
+
+
+                <p>
+                    Termites can cause damage to wooden structures,
+                    furniture, doors, flooring and other parts of
+                    a property if the infestation is not addressed.
+                </p>
+
+
+                <p>
+                    Grow India Pest Control Service provides
+                    termite control services for residential and
+                    commercial properties. Our service approach
+                    focuses on identifying the termite problem and
+                    applying suitable control measures according to
+                    the property requirements.
+                </p>
+
+
+                <p>
+                    If you notice mud tubes, damaged wood,
+                    hollow-sounding wooden surfaces or other signs
+                    of termite activity, professional inspection
+                    can help determine the appropriate course of
+                    action.
+                </p>
+
+            </div>
+
+
+            <!-- INFO -->
+
+            <div class="termite-info-box">
+
+                <h3>
+                    Common Signs of Termites
+                </h3>
+
+
+                <ul class="info-list">
+
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Mud tubes around walls or foundations
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Damaged or hollow-sounding wood
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Small holes in wooden surfaces
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Discarded wings near windows or doors
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Doors or windows becoming difficult to close
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROBLEMS
+===================================================== -->
+
+<section class="problem-section">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <h2>
+                Why <span>Termite Control</span> Matters
+            </h2>
+
+            <p>
+                Early attention to termite activity can help
+                reduce the risk of continuing structural and
+                property damage.
+            </p>
+
+        </div>
+
+
+        <div class="problem-grid">
+
+
+            <!-- CARD 1 -->
+
+            <div class="problem-card">
+
+                <div class="problem-icon">
+
+                    <i class="fa-solid fa-house"></i>
+
+                </div>
+
+                <h3>
+                    Property Protection
+                </h3>
+
+                <p>
+                    Termite activity can affect wooden parts of
+                    a property. Appropriate control measures can
+                    help protect these areas.
+                </p>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+
+            <div class="problem-card">
+
+                <div class="problem-icon">
+
+                    <i class="fa-solid fa-chair"></i>
+
+                </div>
+
+                <h3>
+                    Furniture Protection
+                </h3>
+
+                <p>
+                    Wooden furniture and fixtures can also be
+                    affected by termite activity and may require
+                    professional attention.
+                </p>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+
+            <div class="problem-card">
+
+                <div class="problem-icon">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                </div>
+
+                <h3>
+                    Preventive Care
+                </h3>
+
+                <p>
+                    Regular attention to signs of termite activity
+                    can help property owners respond to problems
+                    earlier.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROCESS
+===================================================== -->
+
+<section class="process-section">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <h2>
+                Our <span>Termite Control Process</span>
+            </h2>
+
+            <p>
+                A structured service process helps us understand
+                the property requirement before recommending
+                suitable control measures.
+            </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+
+            <!-- STEP 1 -->
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    01
+                </div>
+
+                <h3>
+                    Inspection
+                </h3>
+
+                <p>
+                    The property is checked for visible signs and
+                    areas where termite activity may be present.
+                </p>
+
+            </div>
+
+
+            <!-- STEP 2 -->
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    02
+                </div>
+
+                <h3>
+                    Assessment
+                </h3>
+
+                <p>
+                    The observed termite-related problem and
+                    affected areas are considered before service.
+                </p>
+
+            </div>
+
+
+            <!-- STEP 3 -->
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    03
+                </div>
+
+                <h3>
+                    Treatment
+                </h3>
+
+                <p>
+                    Suitable termite control measures are carried
+                    out according to the property and service
+                    requirement.
+                </p>
+
+            </div>
+
+
+            <!-- STEP 4 -->
+
+            <div class="process-card">
+
+                <div class="process-number">
+                    04
+                </div>
+
+                <h3>
+                    Follow-up
+                </h3>
+
+                <p>
+                    Customers can contact us for further service
+                    information or follow-up requirements.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     BENEFITS
+===================================================== -->
+
+<section class="benefits-section">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <h2>
+                Termite Control <span>Service</span>
+            </h2>
+
+            <p>
+                Service support for different residential and
+                commercial property requirements.
+            </p>
+
+        </div>
+
+
+        <div class="benefits-grid">
+
+
+            <!-- 1 -->
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">
+
+                    <i class="fa-solid fa-house"></i>
+
+                </div>
+
+                <h3>
+                    Homes
+                </h3>
+
+                <p>
+                    Termite control service for residential
+                    properties.
+                </p>
+
+            </div>
+
+
+            <!-- 2 -->
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">
+
+                    <i class="fa-solid fa-building"></i>
+
+                </div>
+
+                <h3>
+                    Offices
+                </h3>
+
+                <p>
+                    Pest management support for office and
+                    commercial spaces.
+                </p>
+
+            </div>
+
+
+            <!-- 3 -->
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">
+
+                    <i class="fa-solid fa-store"></i>
+
+                </div>
+
+                <h3>
+                    Shops
+                </h3>
+
+                <p>
+                    Termite-related service requirements for
+                    shops and business premises.
+                </p>
+
+            </div>
+
+
+            <!-- 4 -->
+
+            <div class="benefit-card">
+
+                <div class="benefit-icon">
+
+                    <i class="fa-solid fa-warehouse"></i>
+
+                </div>
+
+                <h3>
+                    Other Properties
+                </h3>
+
+                <p>
+                    Contact us to discuss the pest control
+                    requirement of your property.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FAQ
+===================================================== -->
+
+<section class="faq-section">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <h2>
+                Frequently Asked <span>Questions</span>
+            </h2>
+
+            <p>
+                Some common questions about termite control
+                services.
+            </p>
+
+        </div>
+
+
+        <div class="faq-container">
+
+
+            <!-- FAQ 1 -->
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    type="button"
+                >
+
+                    <span>
+                        How do I know if my property has termites?
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    Common signs can include mud tubes, damaged
+                    or hollow-sounding wood, small holes and
+                    discarded wings. A professional inspection
+                    can help identify the issue.
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 2 -->
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    type="button"
+                >
+
+                    <span>
+                        Do termites only damage wooden furniture?
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    Termites can affect different wooden parts of
+                    a property, including furniture, doors,
+                    frames and other wooden structures.
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 3 -->
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    type="button"
+                >
+
+                    <span>
+                        Can I contact Grow India for an inspection?
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    Yes. You can contact Grow India Pest Control
+                    Service by phone or WhatsApp to discuss your
+                    termite control requirement.
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 4 -->
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    type="button"
+                >
+
+                    <span>
+                        Do you provide termite control for homes?
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+
+                <div class="faq-answer">
+
+                    Yes. We provide termite control service
+                    support for residential as well as commercial
+                    property requirements.
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="cta-section">
+
+    <div class="container">
+
+        <h2>
+            Need Termite Control?
+        </h2>
+
+
+        <p>
+            Contact Grow India Pest Control Service for termite
+            control enquiries and service information.
+        </p>
+
+
+        <div class="cta-buttons">
+
+
+            <!-- CALL -->
+
+            <a
+                href="tel:+919540373378"
+                class="cta-button"
+            >
+
+                <i class="fa-solid fa-phone"></i>
+
+                &nbsp; Call Now
+
+            </a>
+
+
+            <!-- WHATSAPP -->
+
+            <a
+                href="https://wa.me/919650138387"
+                class="cta-button white"
+                target="_blank"
+            >
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                &nbsp; WhatsApp Us
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <!-- ABOUT -->
+
+            <div class="footer-col">
+
+                <h3>
+                    Grow <span>India</span>
+                </h3>
+
+
+                <p>
+                    Grow India Pest Control Service (Regd)
+                    provides pest control solutions for
+                    residential and commercial requirements.
+                </p>
+
+
+                <p>
+                    Professional pest management with a focus
+                    on reliable service and customer support.
+                </p>
+
+
+                <div class="footer-social">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a
+                        href="https://wa.me/919650138387"
+                        target="_blank"
+                    >
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-col">
+
+                <h3>
+                    Quick <span>Links</span>
+                </h3>
+
+
+                <ul class="footer-menu">
+
+                    <li>
+
+                        <a href="index.html">
+                            Home
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="about-us.html">
+                            About Us
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="Termite-control.html">
+                            Termite Control
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="contact-us.html">
+                            Contact Us
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- SERVICES -->
+
+            <div class="footer-col">
+
+                <h3>
+                    Our <span>Services</span>
+                </h3>
+
+
+                <ul class="footer-menu">
+
+                    <li>
+
+                        <a href="Termite-control.html">
+                            Termite Control
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="Termite-control.html">
+                            Residential Pest Control
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="Termite-control.html">
+                            Commercial Pest Control
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="contact-us.html">
+                            Service Enquiry
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-col">
+
+                <h3>
+                    Contact <span>Us</span>
+                </h3>
+
+
+                <ul class="footer-contact">
+
+
+                    <li>
+
+                        <strong>
+                            Company:
+                        </strong>
+
+                        <br>
+
+                        Grow India Pest Control Service (Regd)
+
+                    </li>
+
+
+                    <li>
+
+                        <strong>
+                            Address:
+                        </strong>
+
+                        <br>
+
+                        Q-127 Dilshad Garden,
+                        Near Deer Park,
+                        Delhi - 110095
+
+                    </li>
+
+
+                    <li>
+
+                        <strong>
+                            Phone:
+                        </strong>
+
+                        <br>
+
+                        <a href="tel:+919540373378">
+                            9540373378
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <strong>
+                            WhatsApp:
+                        </strong>
+
+                        <br>
+
+                        <a
+                            href="https://wa.me/919650138387"
+                            target="_blank"
+                        >
+                            9650138387
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <strong>
+                            Email:
+                        </strong>
+
+                        <br>
+
+                        <a href="mailto:varunthakurzrv786@gmail.com">
+                            varunthakurzrv786@gmail.com
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- COPYRIGHT -->
+
+    <div class="copyright">
+
+        © 2026
+
+        <span>
+            Grow India Pest Control Service
+        </span>
+
+        . All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     FLOATING WHATSAPP + CALL
+===================================================== -->
+
+<div class="floating-buttons">
+
+
+    <!-- WHATSAPP -->
+
+    <a
+        href="https://wa.me/919650138387"
+        class="floating-btn floating-whatsapp"
+        target="_blank"
+        aria-label="WhatsApp"
+    >
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+
+    <!-- CALL -->
+
+    <a
+        href="tel:+919540373378"
+        class="floating-btn floating-phone"
+        aria-label="Call"
+    >
+
+        <i class="fa-solid fa-phone"></i>
+
+    </a>
+
+
+</div>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+    /* =====================================================
+       MOBILE MENU
+    ===================================================== */
+
+    const openMenu =
+        document.getElementById("openMenu");
+
+
+    const closeMenu =
+        document.getElementById("closeMenu");
+
+
+    const menuOverlay =
+        document.getElementById("menuOverlay");
+
+
+    /* OPEN */
+
+    openMenu.addEventListener(
+        "click",
+        function () {
+
+            document.body.classList.add(
+                "menu-open"
+            );
+
+        }
+    );
+
+
+    /* CLOSE */
+
+    closeMenu.addEventListener(
+        "click",
+        function () {
+
+            document.body.classList.remove(
+                "menu-open"
+            );
+
+        }
+    );
+
+
+    /* OVERLAY CLOSE */
+
+    menuOverlay.addEventListener(
+        "click",
+        function () {
+
+            document.body.classList.remove(
+                "menu-open"
+            );
+
+        }
+    );
+
+
+    /* LINK CLICK */
+
+    const mobileLinks =
+        document.querySelectorAll(
+            ".mobile-menu a"
+        );
+
+
+    mobileLinks.forEach(
+        function (link) {
+
+            link.addEventListener(
+                "click",
+                function () {
+
+                    document.body.classList.remove(
+                        "menu-open"
+                    );
+
+                }
+            );
+
+        }
+    );
+
+
+    /* ESC CLOSE */
+
+    document.addEventListener(
+        "keydown",
+        function (event) {
+
+            if (event.key === "Escape") {
+
+                document.body.classList.remove(
+                    "menu-open"
+                );
+
+            }
+
+        }
+    );
+
+
+    /* =====================================================
+       FAQ
+    ===================================================== */
+
+    const faqQuestions =
+        document.querySelectorAll(
+            ".faq-question"
+        );
+
+
+    faqQuestions.forEach(
+        function (question) {
+
+            question.addEventListener(
+                "click",
+                function () {
+
+                    const currentItem =
+                        question.closest(
+                            ".faq-item"
+                        );
+
+
+                    document
+                        .querySelectorAll(".faq-item")
+                        .forEach(
+                            function (item) {
+
+                                if (
+                                    item !== currentItem
+                                ) {
+
+                                    item.classList.remove(
+                                        "open"
+                                    );
+
+                                }
+
+                            }
+                        );
+
+
+                    currentItem.classList.toggle(
+                        "open"
+                    );
+
+                }
+            );
+
+        }
+    );
+
+
+</script>
+
+
+</body>
+
+</html>
